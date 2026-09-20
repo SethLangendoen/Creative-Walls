@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creativewalls20.netlify.app/sitemap.xml

@@ -604,8 +604,8 @@ section { padding: 96px 0; }
 .field textarea { resize: vertical; min-height: 130px; }
 .form-note { font-size: 0.82rem; color: var(--ink-muted); margin-top: 14px; }
 
-/* ---------- Thank-you page ---------- */
-.thank-you {
+/* ---------- Centered message pages (thank-you, 404) ---------- */
+.center-page {
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -613,16 +613,16 @@ section { padding: 96px 0; }
   justify-content: center;
   text-align: center;
 }
-.thank-you .icon-badge {
+.center-page .icon-badge {
   width: 64px; height: 64px;
   border-radius: 50%;
   background: var(--accent-soft);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 20px;
 }
-.thank-you .icon-badge svg { width: 30px; height: 30px; color: var(--accent-ink); }
-.thank-you p { max-width: 520px; margin-top: 16px; font-size: 1.05rem; }
-.thank-you .hero-actions { justify-content: center; }
+.center-page .icon-badge svg { width: 30px; height: 30px; color: var(--accent-ink); }
+.center-page p { max-width: 520px; margin-top: 16px; font-size: 1.05rem; }
+.center-page .hero-actions { justify-content: center; }
 .text-link { color: var(--accent-ink); font-weight: 600; white-space: nowrap; }
 
 /* ---------- Footer ---------- */
@@ -682,6 +682,7 @@ section { padding: 96px 0; }
   .hero-media .img-placeholder { min-height: 320px; }
   .hero-media .photo, .hero-media .photo img { min-height: 320px; }
   .about-hero { grid-template-columns: 1fr; }
+  .about-hero .hero-media .photo { height: 460px; }
   .contact-grid { grid-template-columns: 1fr; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
