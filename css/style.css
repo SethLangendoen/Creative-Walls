@@ -392,6 +392,18 @@ section { padding: 96px 0; }
 .about-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .about-hero .hero-media { align-self: stretch; }
 .about-hero .hero-media .photo { height: 100%; }
+
+/* Two-photo collage on the About page */
+.about-photos { position: relative; align-self: stretch; min-height: 640px; }
+.about-photos .photo { position: absolute; min-height: 0; }
+.about-photos .photo img { min-height: 0; }
+.about-photos .photo-main { top: 0; left: 0; width: 76%; height: 82%; }
+.about-photos .photo-second {
+  bottom: 0; right: 0;
+  width: 58%; height: 48%;
+  border: 6px solid var(--bg);
+  box-shadow: var(--shadow);
+}
 .about-hero .img-placeholder { min-height: 420px; }
 
 /* ---------- Gallery ---------- */
@@ -683,6 +695,7 @@ section { padding: 96px 0; }
   .hero-media .photo, .hero-media .photo img { min-height: 320px; }
   .about-hero { grid-template-columns: 1fr; }
   .about-hero .hero-media .photo { height: 460px; }
+  .about-photos { min-height: 0; height: 500px; }
   .contact-grid { grid-template-columns: 1fr; }
   .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .trust-grid { grid-template-columns: repeat(2, 1fr); }
